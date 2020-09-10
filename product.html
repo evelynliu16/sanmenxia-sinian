@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="./modal-style.css">
+    <title>产品</title>
+   
+    <style type="text/css">
+        .navbar-custom {
+            background-color: #45A055;
+            width:"100%";
+        }
+
+        .background {
+            width: 100%;
+            height: 100%;
+            background-color:rgb(144,238,144, 0.2);
+            display: block;
+        }
+        
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            height: 450px;
+            cursor: pointer;
+            padding-top: 15px;
+            }
+
+           
+        .card:hover {
+            box-shadow: 16px 16px 32px 16px rgba(0,0,0,0.2);
+        }
+
+        .card-container {
+            padding: 2px 16px;
+        }
+
+        .product-title {
+            font-size: medium;
+            padding-top: 4%;
+            text-align: center;
+            font-weight: bold;
+            line-height: 24px;
+        }
+
+        .no-gutter > [class*='col-'] {
+            padding-right:0;
+            padding-left:0;
+        }
+
+        
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-custom navbar-dark">
+        <a class="navbar-brand" href="index.html">三门峡思念缓释肥业有限公司 <i class="fas fa-seedling fa-xs"></i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">主页 <i class="fas fa-home"></i><span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.html">关于我们 <i class="fas fa-book"></i><span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.html">联系方式 <i class="fas fa-phone"></i><span
+                            class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="product.html">产品 <i class="fas fa-leaf"></i><span
+                            class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="background">
+        <!--Product descriptions-->
+        <div class="container" style="padding:100px 0px 10px 0px;">
+            <div class="row justify-content-around no-gutter">
+                <div class="col-3 card" id="item">
+                    <img src="./pictures/复合1.jpg" alt="肥料" style="width:100%;height: 83%;" id="product1">
+                    <div class="card-container">
+                        <h4 class="product-title">复合肥料<br>（缓控释型肥包肥）</h4>
+                    </div>   
+                </div>
+                <div class="col-3 card" id="item">
+                    <img src="./pictures/复合2.jpg" alt="肥料" style="width:100%;height: 83%;" id="product2">
+                    <div class="card-container">
+                        <h4 class="product-title">复合肥料<br>（缓释肥包肥)</h4>
+                    </div>
+                </div>
+                <div class="col-3 card" id="item">
+                    <img src="./pictures/复合3.jpg" alt="肥料" style="width:100%;height: 83%;" id="product3">
+                    <div class="card-container">
+                        <h4 class="product-title">复合肥料<br>（含腐植酸缓控释型肥包肥）</h4>              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding:50px 0px 100px 0px;">
+            <div class="row justify-content-around no-gutter">
+                <div class="col-3 card" id="item">
+                    <img src="./pictures/复混1.jpg" alt="肥料" style="width:100%;height: 83%" id="product4">
+                    <div class="card-container" style="padding-top: 0px">
+                        <h4 class="product-title">复混肥料<br>（无机包裹缓释肥包肥）</h4>
+                    </div>
+                </div>
+                <div class="col-3 card" id="item">
+                    <img src="./pictures/复混2.jpg" alt="肥料" style="width:100%;height: 83%;" id="product5">
+                    <div class="card-container">
+                        <h4 class="product-title">复混肥料<br>（缓释肥包肥）</h4>
+                    </div>
+                </div>
+                <div class="col-3 card" id="item">
+                    <img src="./pictures/有机.jpg" alt="肥料" style="width:100%;height: 83%;" id="product6">
+                    <div class="card-container">
+                        <h4 class="product-title">有机肥料</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal1" class='modal'>
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modal-image">
+            <div id="caption">
+                <h1
+                    style="background-color: deepskyblue; padding: 7px; border-radius: 20px; width:fit-content; margin-bottom: 10px;">
+                    产品特点</h1>
+                <h4 id="description" style="line-height: 24px;"></h4><br>
+                <h1
+                    style="background-color: limegreen; padding: 7px; border-radius: 20px; width:fit-content; margin-bottom: 10px;">
+                    适用作物</h1>
+                <h4 id="usage" style="line-height: 24px; padding-bottom: 3px;"></h4><br>
+                <h1
+                    style="background-color: orange; padding: 7px; border-radius: 20px; width:fit-content; margin-bottom: 10px;">
+                    适用方法</h1>
+                <h4 id="use" style="line-height: 24px; padding-bottom: 3px;"></h4><br>
+                <h1
+                    style="background-color: lightcoral; padding: 7px; border-radius: 20px; width:fit-content; margin-bottom: 10px;">
+                    注意事项</h1>
+                <h4 id="warning" style="line-height: 24px; padding-bottom: 3px;"></h4>
+            </div>
+        </div>
+        
+        <script>
+            var descriptions = {
+                product1: "1. 肥效持久，利用率高，可提高肥效7.74%-30%以上；\n 2. 省力、经济、环保，肥效80-130天；\n 3. 全营养：氮磷钾、钙、镁、硅、硫、硼、铁、钾、锰等，品质高；\n 4. 腐殖酸包裹肥，改良土壤，抗病，抗旱，保水，促生长。",
+                product2: "1. 肥效持久，利用率高，可提高肥效10%-30%以上；\n 2. 省力、经济、环保，肥效80-130天；\n 3. 全营养：氮磷钾、钙、镁、硅、硫、硼、铁、钾、锰等，品质高；\n 4. 腐殖酸包裹肥，改良土壤，抗病，抗旱，保水，促生长。",
+                product3: "1. 肥效持久、改良土壤、抗旱保水、抗病抗毒、养分利用率高，按需释放，省工省事省力等特点；\n 2. 全营养元素缓释型肥包肥，科学配比氮磷钾，富含硅、钙、镁、硫、硼等10余种中微量元素，固氮、解磷、活钾，可大幅度提高肥料利用率，同时补充作物的各种养分；\n 3.根据不同作物的不同阶段按需释放，促使果实膨大、着色、提高产量和果实品质。凭能有效降低早期落叶病、生理黄叶等病害发生。",
+                product4: "1. 添加了硅、镁、钙、硫、锌、铁、硼等植物中必需等微量元素，是养分均衡的缓控释复合肥； \n 2. 添加了腐植酸、增收效果，具有改良土壤、肥料缓释增效和刺激作物生长的重要作用。",
+                product5: "1. 肥效持久，利用率高，可提高肥效10%-30% 以上；\n 2. 肥包肥，肥效持久，一次施足，免追肥；\n 3. 以尿素为核心，以磷肥、钾肥以及钙、镁、硅、硫、铁、锌、锰等作物必须的中微量元素为包裹层，采用中国专利技术层层包裹而成的全营养复合体；\n 4. 腐殖酸包裹肥，改良土壤，抗病，抗旱，保水，促生长。",
+                product6: "1. 改良土壤结构，增强保肥供肥能力，为植物的生长创造良好的土壤条件；\n  2. 全面均衡的提供植物所需的各种养分及微量元素，促进植物生长、提高品质；\n 3. 施肥可使植物根系发的，提高抗病能力，防止植物由于缺少养分而引起病害; \n 3. 施肥可使植物根系发达，提高抗病能力，防止植物由于缺少养分而引起病害；\n 4. 使用有机肥所种植的作物更富于营养，味道更纯正，食用更健康；\n 5. 纯有机，绿色，无污染，无公害，保护环境。",
+            };
+            var usage = {
+                product1: "广泛适用于大田作物、小麦、玉米、水稻等作物。",
+                product2: "广泛适用于温室大棚作物，大田作物及花卉，果树，蔬菜，烟草，棉花等经济作物。",
+                product3: "",
+                product4: "广泛适用于大田作物、小麦、玉米、水稻等作物。",
+                product5: "",
+                product6: "应用于各种蔬菜，各种瓜果；苹果、葡萄等各类果树，各类经济作物及大田作物。",
+            };
+            var use = {
+                product1: "适宜底肥、追肥，可撒施、沟施、穴施等。",
+                product2: "适宜底肥、追肥，可撒施、沟施、穴施等。",
+                product3: "适宜做底肥、追肥；可沟施、穴施、撒施等方式，施肥后覆土。具体用量以当地农技人员或公司业务人员指导为准。",
+                product4: "适宜底肥、追肥，可撒施、沟施、穴施等。",
+                product5: "建议施肥量（亩）40-50公斤。各地可根据地力状况，作物种类及目标产量，酌情增减用肥量。",
+                product6: "1. 适宜底肥，可沟施、穴施或撒施，施肥时需离开植物根茎 \n 2. 基施每亩用量300-500kg，均匀撒施即可；穴施每亩用量200-300kg，撒施在种植穴（沟）内，然后栽苗、覆土、浇水即可。具体施肥量应根据当地土壤肥力、生育期、气候以及施肥水平而定。\n 3. 本品可与各种肥料混合使用，效果更佳。",
+            }
+            var warning = {
+                product1: "1. 不宜与种子、植物根系、叶片直接接触，使用不当会对作物造成伤害；\n 2. 请农友们在当地农技部门指导下，根据土壤确定合理施用量。\n 3. 产品储存应当阴凉，通风，干燥，避免阳光直射，避免与碱性肥料混贮，混用。",
+                product2: "1. 不宜与种子、植物根系、叶片直接接触，使用不当会对作物造成伤害；\n 2. 大棚作物应深施覆土；\n 3. 果蔬用肥应距离树冠30-50cm挖环状沟槽或穴施；\n 4. 请农友们在当地农技部门指导下，根据土壤确定合理施用量。\n 5. 产品储存应当阴凉，通风，干燥，避免阳光直射，避免与碱性肥料混贮，混用。",
+                product3: "避免与种子或根系直接接触，肥料应与种子或根系间隔10-15厘米。",
+                product4: "1. 不宜与种子、植物根系、叶片直接接触，使用不当会对作物造成伤害；\n 2. 请农友们在当地农技部门指导下，根据土壤确定合理施用量。\n 3. 产品储存应当阴凉，通风，干燥，避免阳光直射，避免与碱性肥料混贮，混用。",
+                product5: "由于肥料浓度较高，种肥必需隔离，由于施肥不当出现不良后果，产销商恕不负责。",
+                product6: "1. 根据作物对养分的需求配施化肥。与化肥混合均匀，注意及时浇水。\n 2. 施肥时请注意不宜让叶面、茎秆、根系与肥料直接接触。\n 3.施肥深度以10-20cm为宜，不可施于地表。\n 4.在阴凉干燥处保存。一次未用完请封口存放，注意防潮、防晒、防破裂。",
+            }
+
+            var modal = document.getElementById("modal1");
+
+            // Get the image and insert it inside the modal.
+            var img1 = document.getElementById("product1");
+            var img2 = document.getElementById("product2");
+            var img3 = document.getElementById("product3");
+            var img4 = document.getElementById("product4");
+            var img5 = document.getElementById("product5");
+            var img6 = document.getElementById("product6");
+            var images = [img1, img2, img3, img4, img5, img6];
+
+            var modalImg = document.getElementById("modal-image");
+            var text1 = document.getElementById("description");
+            var text2 = document.getElementById("usage");
+            var text3 = document.getElementById("use");
+            var text4 = document.getElementById("warning");
+
+            for (let i = 0; i < images.length; i++) {
+                images[i].onclick = function() {
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    text1.innerText = descriptions[this.id];
+                    text2.innerText = usage[this.id];
+                    text3.innerText = use[this.id];
+                    text4.innerText = warning[this.id];
+                }
+            }
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function () {
+                    modal.style.display = "none";
+                }
+        </script>
+    </div>
+</body>

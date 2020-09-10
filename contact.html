@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.14.0/css/all.css">
+
+    <title>联系方式</title>
+</head>
+
+<style>
+    .navbar-custom {
+        background-color: #45A055;
+    }
+
+    .transparent-background {
+        position: relative; 
+        height: 100vh;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .transparent-background::before {
+        content: "";
+        background-image: url('./pictures/contact_background.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.53;
+    }
+
+    .gradient-background {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(#d9f3de, rgb(245, 245, 201));
+        padding: 20px 20px 70px 20px;
+    }
+
+    .left-centered-text {
+        justify-content: left;
+        font-size: 20px;
+        position: relative;
+        color: black;
+    }
+
+    input[type=text], select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 1px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    }
+
+        /* Style the submit button with a specific background color etc */
+    input[type=submit] {
+        background-color:darkgreen;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+
+    /* Add a background color and some padding around the form */
+    .container {
+        padding: 20px;
+        top: 10px;
+        bottom: 100px;
+        width: 500px;
+        height:730px;
+    }
+</style>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <div>
+        <!-- Navigation bar-->
+        <nav class="navbar navbar-expand-lg navbar-fixed-top navbar-custom navbar-dark">
+            <a class="navbar-brand" href="index.html">三门峡思念缓释肥业有限公司 <i class="fas fa-seedling fa-xs"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav nav-fill w-100">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">主页 <i class="fas fa-home"></i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="about.html">关于我们 <i class="fas fa-book"></i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">联系方式 <i class="fas fa-phone"></i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="product.html">产品 <i class="fas fa-leaf"></i><span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="gradient-background">
+            <h1 class="left-centered-text">联系电话：0398-2917178</h1>
+
+            <!--Form-->
+            <div class="container transparent-background">
+                <h5 style="text-align: center;padding-bottom: 8px;">请填写您的联系方式（至少提供姓名及联系电话)</h6>
+                <form action="connect.php" method="POST" style="position:relative;color: black;height:50px;"> 
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="您的姓名">
+            
+                    <label for="phone">电话</label>
+                    <input type="text" id="phone" name="phone" placeholder="您的联系方式">
+            
+                    <label for="contact-time">方便联系时间</label><br>
+                    <input type="checkbox" name="day[]" value="周一"> 周一&nbsp
+                    <input type="checkbox" name="day[]" value="周二"> 周二&nbsp
+                    <input type="checkbox" name="day[]" value="周三"> 周三&nbsp
+                    <input type="checkbox" name="day[]" value="周四"> 周四&nbsp
+                    <input type="checkbox" name="day[]" value="周五"> 周五&nbsp
+                    <input type="checkbox" name="day[]" value="周六"> 周六&nbsp
+                    <input type="checkbox" name="day[]" value="周日"> 周日&nbsp
+                    <input type="text" id="time" name="time" placeholder="时间段（例如3-5点）">
+                    <label for="info">咨询内容</label>
+                    <textarea id="info" name="info" placeholder="您需要咨询的问题或业务需求" style="height:200px"></textarea>           
+                    <input type="submit" value="提交" name="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
